@@ -1,7 +1,7 @@
 'reinit '
 'set display color white'
 'c'
-'xopen /jet/ox/DATA/ETOPO1/etopo1_ice_g_f4-slrain.nc'  ;**提供地形高度(hgt)
+'xopen /DATA/ETOPO1/etopo1_ice_g_f4-slrain.nc'  ;**提供地形高度(hgt)
 
 'set rgb 96 199 239 239'
 'set rgb 97 50 220 100'
