@@ -54,7 +54,7 @@ rc = gsfallow('on')
 ;** 等值線
 'set-off'
 'cint4 zdiff 5 -co 3 -ct 3'    ;** 位勢高度異常等值線，間距5，綠色
-'vector2 udiff vdiff 0.4 10 -co 0,9 -un [m/s]'    ;** 風場向量，黑白配色
+'vector2 udiff vdiff 0.4 10 -co 0,9 -un [m/s]'    ;** 風場向量
 'draw-ol.gs'                   ;** 繪製海岸線
 
 ;** 添加標題
