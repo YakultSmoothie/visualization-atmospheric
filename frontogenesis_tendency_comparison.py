@@ -123,11 +123,11 @@ print(f"    Field shape: {frontogenesis_field.shape}")
 print(f"    Units: {frontogenesis_field.data.units}")
 
 # =================================================================================================
-# 相當位溫梯度強度趨勢計算 (Method 2: 物理意義近似)
+# 位溫梯度強度趨勢計算 (Method 2: 物理意義近似)
 # =================================================================================================
 print(f"\nComputing tendency of equivalent potential temperature gradient magnitude...")
 
-# 計算相當位溫的空間梯度
+# 計算位溫的空間梯度
 dtheta_dx, dtheta_dy = mpcalc.geospatial_gradient(
     theta, dx=dx_3d, dy=dy_3d
 )
@@ -218,7 +218,7 @@ colorbar1 = plt.colorbar(
 colorbar1.set_label(f'[{frontogenesis_converted.units}]', fontsize=FONT_SIZE * 0.9)
 
 # =================================================================================================
-# 右圖：相當位溫梯度強度趨勢
+# 右圖：位溫梯度強度趨勢
 # =================================================================================================
 contour2 = ax2.contourf(
     lons, lats, gradient_tendency_converted,
@@ -268,6 +268,6 @@ print("===================================================")
 1. 左圖 (Frontogenesis): 
    - 使用MetPy標準鋒生函數定義
 2. 右圖 (Tendency of |∇θₑ|):
-   - 相當位溫梯度強度的時間變化率
+   - 位溫梯度強度的時間變化率
 ================================================================================
 """
